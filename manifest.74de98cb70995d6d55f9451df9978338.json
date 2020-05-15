@@ -1,32 +1,32 @@
 {
   "icons": [
     {
-      "src": "/Brendan-Hollaway/icon_512x512.d70ba28451bbebe07088d692ae4d44a0.png",
+      "src": "/icon_512x512.d70ba28451bbebe07088d692ae4d44a0.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/Brendan-Hollaway/icon_384x384.7e34c06b899a17878aa3d1f2383ac106.png",
+      "src": "/icon_384x384.7e34c06b899a17878aa3d1f2383ac106.png",
       "sizes": "384x384",
       "type": "image/png"
     },
     {
-      "src": "/Brendan-Hollaway/icon_256x256.7b1c17a5f088964228bd815fe0468f4c.png",
+      "src": "/icon_256x256.7b1c17a5f088964228bd815fe0468f4c.png",
       "sizes": "256x256",
       "type": "image/png"
     },
     {
-      "src": "/Brendan-Hollaway/icon_192x192.1b4bb05c89aa1c2f403cfb67bd706bd9.png",
+      "src": "/icon_192x192.1b4bb05c89aa1c2f403cfb67bd706bd9.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/Brendan-Hollaway/icon_128x128.1f456e5edfa27b1ca9e103ad52df1f66.png",
+      "src": "/icon_128x128.1f456e5edfa27b1ca9e103ad52df1f66.png",
       "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src": "/Brendan-Hollaway/icon_96x96.3b483110da892d67ae488542f94e4d9c.png",
+      "src": "/icon_96x96.3b483110da892d67ae488542f94e4d9c.png",
       "sizes": "96x96",
       "type": "image/png"
     }
