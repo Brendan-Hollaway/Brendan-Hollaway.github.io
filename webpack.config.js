@@ -39,7 +39,7 @@ const baseWebpack = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: "/Brendan-Hollaway/",
+    publicPath: "/",
     filename: '[name].bundle.js'
   },
   module: {
