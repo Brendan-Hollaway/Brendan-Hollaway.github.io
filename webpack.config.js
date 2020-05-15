@@ -64,10 +64,10 @@ const baseWebpack = {
           }
         ]
       },
-      {
-        test: /\.json$/,
-        loader: 'json-loader'
-      },
+      // {
+      //   test: /\.json$/,
+      //   loader: 'json-loader'
+      // },
       {
         test: /\.jpe?g$|\.gif$|\.png$|\.svg$/,
         use: 'file-loader'

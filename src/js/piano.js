@@ -19,6 +19,32 @@ function isTouchDevice() {
   return mq(query);
 }
 /* eslint-enable no-undef */
+var the_ride = ["1F", "1Fs", "1G"];
+var curr_notes = ["1E", "1E", "1E"];
+
+function is_ride() {
+    var i;
+    for (i = 0; i < the_ride.length; i++) {
+        var note1 = curr_notes[i];
+        console.log(note1);
+        var note2 = the_ride[i];
+        console.log(note2);
+        if (note1 != note2) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function play_note(notes, note) {
+    console.log("Playing a note!");
+    notes[note].play();
+    curr_notes.shift();
+    curr_notes.push(note);
+    if (is_ride()) {
+        alert("Snow Block");
+    }
+}
 
 function addKeyboardEvents(notes) {
   window.addEventListener('keydown', (e) => {
@@ -27,7 +53,8 @@ function addKeyboardEvents(notes) {
 
     if ($key) {
       const note = $key.getAttribute('data-note');
-      notes[note].play();
+      console.log("Playing a keyboard!");
+      play_note(notes, note);
       $key.classList.add('active');
       setTimeout(() => $key.classList.remove('active'), 100);
     }
@@ -38,7 +65,8 @@ function addTapEvents(notes) {
   document.querySelectorAll('[data-key]').forEach((key) => {  
     let handler = function (e) {
       const note = key.getAttribute('data-note');
-      notes[note].play();
+      console.log("Playing a tap!");
+      play_note(notes, note);
     };
   
     if (isTouchDevice()) {
