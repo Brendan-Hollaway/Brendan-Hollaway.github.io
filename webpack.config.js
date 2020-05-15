@@ -39,6 +39,7 @@ const baseWebpack = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath: "/Brendan-Hollaway/",
     filename: '[name].bundle.js'
   },
   module: {
@@ -113,7 +114,16 @@ const sw = {
 };
 
 if (PROD) {
-  baseWebpack.plugins.push(new webpack.optimize.UglifyJsPlugin({})); 
+    
+  // baseWebpack.plugins.push(new webpack.optimize.UglifyJsPlugin({
+  //       uglifyOptions: {
+  //           warnings: false,
+  //           ie8: false,
+  //           output: {
+  //               comments: false
+  //           }
+  //       }
+  //   })); 
   baseWebpack.plugins.push(new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }));
   baseWebpack.plugins.push(new BundleAnalyzerPlugin({analyzerMode: 'disabled'})); 
   baseWebpack.plugins.push(new WebpackPwaManifest(webapp));
