@@ -19,8 +19,8 @@ function isTouchDevice() {
   return mq(query);
 }
 /* eslint-enable no-undef */
-var the_ride = ["1F", "1Fs", "1G"];
-var curr_notes = ["1E", "1E", "1E"];
+var the_ride = ["1D","1G","1D","1G","2B","1G"];
+var curr_notes = ["1E", "1E", "1E", "1E", "1E", "1E"];
 
 function is_ride() {
     var i;
@@ -42,7 +42,7 @@ function play_note(notes, note) {
     curr_notes.shift();
     curr_notes.push(note);
     if (is_ride()) {
-        alert("Snow Block");
+        alert("Snow!");
     }
 }
 
